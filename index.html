@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./font/Whitney/stylesheet.css" />
+    <link rel="stylesheet" href="./font/SegoeUI/stylesheet.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="header">
+          <div class="container">
+          <div class="header-top">
+            <div class="header-top__left">
+              <div class="header-top__icon">
+                <img src="./img/header/01.png" alt="" />
+              </div>
+            </div>
+            <div class="header-top__right">
+              <a href="" class="header-top__link">Клиентам</a>
+              <a href="" class="header-top__link">
+                <div class="header-top__img">
+                  <img src="./img/header/02.png" alt="" />
+                </div>
+                Войти
+              </a>
+            </div>
+          </div>
+          <div class="header-main">
+            <div class="header-main__title">
+              Подбор авто в лизинг по выгодной цене
+            </div>
+            <div class="header-main__text">
+              IT платформа по быстрому поиску автомобиля от официальных дилеров РФ
+            </div>
+            <button class="header-main__button btn-reg" data-toggle="modal" data-target="#show-modal">
+              Регистрация
+            </button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="content">
+            <div class="content-title">
+              Меньше условий – больше возможностей
+            </div>
+            <div class="content-card">
+            
+                <div class="content-card__item">
+                  <div class="content-card__description">
+                    <div class="content-card__title">
+                      Экономия времени
+                    </div>
+                    <div class="content-card__text">
+                      Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.
+                    </div>
+                  </div>
+                  <div class="content-card__img">
+                    <img src="./img/content/01.svg" alt="">
+                  </div>
+                </div>
+                <div class="content-card__item">
+                  <div class="content-card__description">
+                    <div class="content-card__title">
+                      Никаких задержек
+                    </div>
+                    <div class="content-card__text">
+                      Вы получаете запросы сразу же после отправки клиентом.
+                    </div>
+                  </div>
+                  <div class="content-card__img">
+                    <img src="./img/content/02.svg" alt="">
+                  </div>
+                </div>
+                <div class="content-card__item"> 
+                  <div class="content-card__description">
+                    <div class="content-card__title">
+                      Максимальная информативность
+                    </div>
+                    <div class="content-card__text">
+                      В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.
+                    </div>
+                  </div>
+                  <div class="content-card__img">
+                    <img src="./img/content/03.svg" alt="">
+                  </div>
+                </div>
+
+                <div class="content-card__item"> 
+                  <div class="content-card__description">
+                    <div class="content-card__title">
+                      Удобство общения
+                    </div>
+                    <div class="content-card__text">
+                      Для каждого запроса у вас открыт чат с клиентом с возможностью отправки документов.
+                    </div>
+                  </div>
+                  <div class="content-card__img">
+                    <img src="./img/content/04.svg" alt="">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="registration">
+            <div class="registration__text">
+              Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов
+            </div>
+            <button class="header-main__button btn-reg" data-toggle="modal" data-target="#show-modal">
+              Регистрация
+            </button>
+          </div> 
+        </div>
+      </div>
+      
+    </div>
+    <div class="modal-window" id="show-modal"  >
+      <div class="modal-dialog" >
+        <form class="modal"  method="POST" >
+          <button class="modal__close-button"><img src="./img/registration/02.svg" alt=""></button>
+          <p class="modal__title">Авторизация</p>
+            <div class="modal__input-wrapper"> 
+              <label for="" class="modal__label modal__label_name">E-mail</label>
+              <input name="email" type="email" class="modal__input modal__input_email" placeholder="Введите email">
+              <div class="modal__error modal__error_email"></div>
+           </div>
+           <div class="modal__input-wrapper">
+           <label for="" class="modal__label modal__label_password">Пароль</label>
+            <input name="password" type="text" class="modal__input modal__input_password" placeholder="Введите пароль">
+            <div class="modal__error modal__error_password"></div>
+          </div>
+          <button class="header-main__button btn-login" type="submit"> Войти </button>
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
